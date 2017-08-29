@@ -1,0 +1,9 @@
+@import "../scss/common";
+
+.my-order-container {
+  @extend .container-common;
+  background-color: #F2F2F2;
+  height: auto!important;
+  min-height: 100%;
+}
+

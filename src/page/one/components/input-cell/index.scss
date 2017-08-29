@@ -1,0 +1,30 @@
+@import '../../scss/common';
+
+.input-cell {
+  @include flex(row, nowrap, flex-start, center);
+  height: 50px;
+  font-size: 18px;
+  color: #666666;
+  background-color: #fff;
+  border-bottom: 1px solid #DCDCDC;
+  box-sizing: border-box;
+
+
+  .ic-header {
+    width: 25%;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+  .ic-body {
+    margin-left: 20px;
+    box-sizing: border-box;
+    width: 60%;
+  }
+  .ic-body>input {
+    height: 35px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+  }
+}

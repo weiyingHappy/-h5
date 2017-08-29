@@ -1,0 +1,10 @@
+@import "../scss/common";
+
+.to-youzhu-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #fff;
+  width: 100%;
+}
+

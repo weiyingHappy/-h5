@@ -1,0 +1,121 @@
+@import "../scss/common";
+
+.choose-coupon-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #EBEBEB;
+  .cc-top {
+    height: 44px;
+    background-color: #fff;
+    font-size: 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 35px;
+  }
+  .cc-top > div {
+    height: 100%;
+    line-height: 44px;
+  }
+  .cct-a {
+
+  }
+  .cct-b {
+
+  }
+  .cc-middle {
+    padding: 10px 12px 60px 12px;
+  }
+  .cc-b {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+  .ccb-left {
+    font-size: 13px;
+    color: #3190E8;
+  }
+  .ccb-right {
+    font-size: 13px;
+    color: #999999;
+  }
+  .zanwu {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .zanwu-a {
+    width: 59px;
+    height: 100px;
+  }
+  .zanwu-b {
+    font-size: 15px;
+    color: #666666;
+  }
+  .cc-bottom {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ccb-a {
+    width: 176px;
+    height: 41px;
+    font-size: 15px;
+    color: #FFFFFF;
+    background-color: #FF5000;
+    border: none;
+  }
+  .ccb-b {
+    font-size: 13px;
+    color: #A3A3A3;
+    margin-top: 15px;
+  }
+  .ccbb-a {
+    color: #3190E8;
+  }
+  .ci-container {
+    position: relative;
+  }
+  .ci-choosing {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.organge-select {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/coupon_select_orange.png);
+    }
+    &.blue-select {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/coupon_select_blue.png)
+    }
+  }
+
+  .operation_btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 30px 0px #e2e2e2;
+    button {
+      padding: 10px 20px;
+      width: 60%;
+      color: #fff;
+      border-radius: 4px;
+      background-color: #FF5000;
+      border: none;
+      box-shadow: 0 1px 10px 1px #bfbfbf;
+    }
+  }
+}

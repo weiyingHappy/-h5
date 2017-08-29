@@ -1,0 +1,131 @@
+@import '../../scss/common';
+
+.order-piece {
+  .order-item {
+    margin: 10px 6px;
+    margin-bottom: 0;
+    @include flex(column, wrap, flex-start, inherit);
+    background-color: #fff;
+    border: solid 1px #dcdcdc;
+    border-radius: 5px;
+    padding: 10px;
+    .header {
+      font-size: 0;
+      width: 100%;
+      border-bottom: solid 1px #dcdcdc;
+      padding-bottom: 5px;
+      .hotel_name, .state {
+        font-size: 14px;
+        display: inline-block;
+        .hotel_icon {
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/icon-jiu-dian.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+      .hotel_name {
+        width: 60%;
+        font-size: 14px;
+        color: #666;
+      }
+      .state {
+        width: 40%;
+        text-align: right;
+        color: #fe9f07;
+      }
+    }
+
+    .body {
+      .room_name {
+        font-size: 15px;
+        color: #666;
+        margin: 5px 0;
+        .order_type {
+          color: #23beae;
+        }
+      }
+      .date_range {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .item-header {
+    font-size: 16px;
+    color: #FF5000;
+    height: 49px;
+    line-height: 49px;
+    padding: 0 12px;
+    border-bottom: 1px solid #DCDCDC;
+  }
+
+  .item-body {
+    padding: 12px 12px;
+    @include flex(column, nowrap, space-around, inherit);
+    border-bottom: 1px solid #DCDCDC;
+  }
+  .item-body-a {
+    font-size: 16px;
+    color: #666666;
+    line-height: 18px;
+    font-weight: bold;
+  }
+  .item-body-b, .item-body-c {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 18px;
+  }
+  .item-tail {
+    /*display: flex;*/
+    /*flex-flow: row nowrap;*/
+    /*justify-content: flex-end;*/
+    padding: 10px 0 10px 10px;
+  }
+  .item-btn {
+    box-sizing: border-box;
+    min-width: 65px;
+    padding: 8px 15px;
+    border: solid 1px #d4d4d4;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #23beae;
+    margin: 0 5px 0 0;
+    background-color: #fff;
+    &.fill {
+      border-color: #23beae;
+      background-color: #23beae;
+      color: #fff;
+    }
+  }
+
+  .no-order {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 200px;
+  }
+  .item-btn-group-between {
+    @include flex(row, nowrap, space-between, center);
+  }
+  .item-btn-group {
+    @include flex(row, nowrap, flex-end, inherit);
+  }
+
+}
+  .nohave {
+    text-align: center;
+    color: #5d5d5d;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+

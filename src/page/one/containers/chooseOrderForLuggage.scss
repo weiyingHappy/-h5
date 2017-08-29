@@ -1,0 +1,39 @@
+.choose-wuyou-order {
+  min-height: 100%;
+  background-color: #F2F2F2;
+  padding: 16px 7px;
+  box-sizing: border-box;
+  .wuyou-order-item {
+    height: 100px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+  .woi-a {
+    font-size: 16px;
+    color: #333333;
+  }
+  .woi-b {
+    font-size: 13px;
+    color: #717171;
+  }
+  .woi-c {
+    font-size: 13px;
+    color: #717171;
+  }
+  .wo-container {
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .wo-choosing {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 29px;
+  }
+}

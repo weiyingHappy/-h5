@@ -1,0 +1,10 @@
+@import "../../scss/common";
+
+.show-comment-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #F2F2F2;
+  padding-top: 10px;
+}
+

@@ -1,0 +1,48 @@
+@import '../../scss/common';
+
+.tabber {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  .tab_icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    &.hotel {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-jiu-dian.png);
+      &.active {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-active-jiu-dian-2.png);
+      }
+    }
+    &.order {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-ke-fang.png);
+      &.active {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-active-ke-fang-2.png);
+      }
+    }
+    &.gifts {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-zui-xin.png);
+      &.active {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-active-zui-xin-2.png);
+      }
+    }
+    &.user {
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-nzhang-hu.png);
+      &.active {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/tab-zhang-hu.png);
+      }
+    }
+  }
+  
+  .tab_label {
+    font-size: 12px;
+    &.active {
+      color: #23beae;
+    }
+  }
+}

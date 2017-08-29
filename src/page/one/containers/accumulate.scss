@@ -1,0 +1,68 @@
+@import "../scss/common";
+
+.accumulate-container {
+  @extend .container-common;
+  height: 100%;
+  background-color: #F2F2F2;
+  overflow: auto;
+  -webkit-overflow-scrolling : touch; 
+  .top {
+    height: 150px;
+    background-color: #F85810;
+    color: #fff;
+    @include flex(row, nowrap, center, center);
+    .icon {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      &.money {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/money.png);
+      }
+    }
+  }
+  .top-img {
+    height: 19px;
+    width: 20px;
+  }
+  .top-text {
+    font-size: 3rem;
+    padding-left: 10px;
+    padding-bottom: 5px;
+  }
+
+  .m-item {
+    height: 60px;
+    margin-top: 10px;
+    background-color: #fff;
+    @include flex(row, nowrap, space-between, center);
+    padding-left: 15px;
+  }
+  .mi-left {
+    @include flex(column, nowrap, space-around, flex-start);
+  }
+  .mil-top {
+    font-size: 16px;
+    color: #666666;
+  }
+  .mil-bottom {
+    font-size: 13px;
+    color: #999999;
+  }
+  .mi-right {
+    font-size: 21px;
+    color: #FF0000;
+    text-align: left;
+
+    padding-right: 30px;
+    width: 80px;
+  }
+    .nohave {
+    text-align: center;
+    color: #5d5d5d;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+}
+

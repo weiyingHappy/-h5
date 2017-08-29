@@ -1,0 +1,147 @@
+@import '../../scss/common';
+
+
+.coupon-item-orange {
+  .citl-a, .citl-b, .citr-a  {
+    color: #FF7E00;
+  }
+  .citr-b, .cib-b {
+    color: #999999;
+  }
+  .cib-a {
+    color: #5674F2;
+  }
+}
+.coupon-item-red {
+  .citl-a, .citl-b, .citr-a  {
+    color: #FF1111;
+  }
+  .citr-b, .cib-b {
+    color: #999999;
+  }
+  .cib-a {
+    color: #FF7E00;
+  }
+}
+.coupon-item-grey {
+  .citl-a, .citl-b, .citr-a, .citr-b, .cib-a, .cib-b {
+    color: #CCCCCC;
+  }
+}
+.coupon-item-orange, .coupon-item-red, .coupon-item-grey {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 8px;
+
+
+  .ci-top {
+    @include flex(row, nowrap, flex-start, space-between);
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+
+    .circle-top {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #EBEBEB;
+      top: -4px;
+      left: 106px;
+    }
+    .circle-bottom {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      position: absolute;
+      background-color: #F5F5F5;
+      bottom: -4px;
+      left: 106px;
+    }
+
+    .cit-left {
+      width: 110px;
+      text-align: center;
+      padding: 13px 0;
+      border-right: 2px dotted #EBEBEB;
+      @include flex(column, nowrap, center, center);
+      .citl-a {
+        font-size: 25px;
+      }
+      .citl-b {
+        font-size: 14px;
+      }
+    }
+    .cit-right {
+      padding: 13px 0;
+      @include flex(column, nowrap, center, flex-start);
+      padding-left: 20px;
+      flex: 1;
+      .citr-a {
+        font-size: 18px;
+      }
+      .citr-b {
+        font-size: 12px;
+      }
+    }
+  }
+  .ci-bottom {
+    border-radius: 4px;
+    height: 30px;
+    background-color: #F5F5F5;
+    padding: 0 12px;
+    @include flex(row, nowrap, space-between, center);
+    .cib-a {
+      font-size: 12px;
+    }
+    .cib-b {
+      font-size: 12px;
+    }
+  }
+}
+
+.coupon-item-red {
+  .ci-top {
+    background-color: #F34B4B;
+    color: #fff;
+  }
+  .ci-bottom {
+    background-color: #FFE4E3;
+  }
+  .cib-a {
+    color: #F34B4B;
+  }
+  .citl-a,.citl-b,.citr-a,.citr-b {
+    color: #fff;
+  }
+} 
+
+.coupon-item-orange {
+  .ci-top {
+    background-color: #FFAE00;
+    color: #fff;
+  }
+  .ci-bottom {
+    background-color: #FFF6E0;
+  }
+  .cib-a {
+    color: #FFAE00;
+  }
+  .citl-a,.citl-b,.citr-a,.citr-b {
+    color: #fff;
+  }
+}
+
+
+.coupon-item-grey {
+  .ci-top {
+    background-color: #FFFFFF;
+    color: #fff;
+  }
+  .ci-bottom {
+    background-color: #F5F5F5;
+  }
+  .cib-a,.citl-a,.citl-b,.citr-a,.citr-b {
+    color: #CCCCCC;
+  }
+}

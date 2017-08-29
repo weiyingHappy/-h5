@@ -1,0 +1,18 @@
+@import '../../scss/common';
+
+.scroll-container {
+  //height: 100%;
+}
+.image-gallery, .image-gallery-content, .image-gallery-slide-wrapper, .image-gallery-swipe, .image-gallery-slides, .image-gallery-slide, .image-gallery-image, .image-gallery-image {
+  height: 100%;
+}
+.image-gallery-image {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-gallery-slide img {
+  width: auto;
+  min-width: 100%;
+}

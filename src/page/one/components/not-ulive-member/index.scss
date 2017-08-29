@@ -1,0 +1,41 @@
+@import '../../scss/common';
+
+.not-ulive-member {
+  .top {
+    height: 170px;
+    @include flex(column, nowrap, flex-start, center);
+    padding-top: 23px;
+  }
+  .top-a {
+    font-size: 15px;
+    color: #999999;
+  }
+  .top-b {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 0 5px;
+    color: #333333;
+    text-align: center;
+    @include flex(column, nowrap, center, center);
+  }
+  .middle {
+    background-color: #F5F5F8;
+    @include flex(column, nowrap, flex-start, center);
+    padding-top: 34px;
+    padding-bottom:34px;
+  }
+  .qr-code {
+    height: 223px;
+    width: 223px;
+  }
+  .qr-desc {
+    margin-top: 13px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .qr-bottom {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666666;
+  }
+}

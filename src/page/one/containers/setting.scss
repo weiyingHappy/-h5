@@ -1,0 +1,24 @@
+@import "../scss/common";
+
+.setting-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #F2F2F2;
+  padding-top: 35px;
+
+  .middle {
+    margin-top: 47px;
+    padding: 0 19px 0 22px;
+  }
+  .m-btn {
+    width: 100%;
+    border: none;
+    background-color: #4969F1;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    height: 50px;
+  }
+}
+

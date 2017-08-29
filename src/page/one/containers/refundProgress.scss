@@ -1,0 +1,149 @@
+@import "../scss/common";
+
+.refund-progress-container {
+  @extend .container-common;
+  background-color: #F2F2F2;
+  height: auto!important;
+  min-height: 100%;
+  padding-top: 10px;
+
+  .sp-top {
+    background-color: #fff;
+    padding: 10px 10px 10px 12px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .sp-top>div {
+    margin: 10px 0;
+  }
+  .sp-middle {
+    margin-top: 10px;
+    background-color: #fff;
+  }
+  .spm-a {
+    padding-left: 12px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 12px;
+    border-bottom: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #333333;
+  }
+  .spm-b {
+    padding-left: 12px;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .spm-c {
+    padding-left: 12px;
+    margin-top: 8px;
+    font-size: 15px;
+    color: #666666;
+  }
+  .spm-d {
+    padding-left: 12px;
+    margin-top: 3px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    color: #FF3333;
+  }
+
+  .sp-bottom {
+    margin-top: 10px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .spb-left {
+    width: 48px;
+    /*border: 1px solid red;*/
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  .progress-line {
+    height: 150px;
+    width: 2px;
+    box-sizing: border-box;
+    background-color: #DDDDDD;
+    margin-top: 10px;
+  }
+  .progress-dot-a {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    position: absolute;
+    z-index: 100;
+    top: 4px;
+    left: 18px;
+  }
+  .progress-dot-b {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    position: absolute;
+    z-index: 100;
+    top: 79px;
+    left: 18px;
+
+  }
+  .progress-dot-c {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #DDDDDD;
+    position: absolute;
+    z-index: 100;
+    top: 154px;
+    left: 18px;
+  }
+  .pd-highlight {
+    background-color: #FF5000!important;
+    border: 3px solid #ffa77f!important;
+    left: 16px!important;
+  }
+
+
+  .spb-right {
+    font-size: 15px;
+    flex: 1;
+  }
+  .spbr-a {
+    height: 34px;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .spbr-b {
+    height: 34px;
+    padding: 20px 0;
+    border-top: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    width: 100%;
+  }
+  .spbr-c {
+    height: 34px;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .spbra-a {
+    line-height: 15px;
+  }
+  .spbra-b {
+    font-size: 13px;
+  }
+
+
+
+}
+

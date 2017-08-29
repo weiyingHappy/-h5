@@ -1,0 +1,51 @@
+@import '../../scss/common';
+
+.comment-item {
+  background-color: #fff;
+  padding: 18px 11px 10px 16px;
+
+  .ci-a {
+    @include flex(row, nowrap, space-between, center);
+    font-size: 14px;
+  }
+  .cia-a {
+    color: #b2b2b2;
+  }
+  .cia-b {
+    color: #ff5000;
+  }
+  .comment-star-icon {
+    margin-right: 3px;
+    width: 14px;
+    height: 13px;
+    &.fill,
+    &.blank {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &.fill {
+      background-image: url('http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/icon-1.png');
+      background-size: cover;
+    }
+    &.blank {
+      background-image: url('http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/icon-2.png');
+      background-size: cover;
+    }
+  }
+  .comment-star-score {
+    color: #ff5000;
+    margin-left: 10px;
+  }
+  .ci-b {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 9px;
+  }
+  .ci-c {
+    font-size: 11px;
+    color: #b2b2b2;
+    margin-top: 9px;
+  }
+}

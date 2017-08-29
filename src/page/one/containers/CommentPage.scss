@@ -1,0 +1,63 @@
+.comment_page {
+  height: 100%;
+  background-color: #efefef;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  .hack_block {
+    height: 100px;
+    background-color: #fff;
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, .9);
+    -webkit-backdrop-filter: blur(5px);
+    .score {
+      padding: 12px 20px;
+      // background-color: #fff;
+      border-bottom: solid 1px #dcdcdc;
+      color: #666;
+      font-size: 14px;
+      .score_num {
+        color: #23beae;
+        font-size: 16px;
+      }
+    }
+    .tabs {
+      padding: 0px 20px;
+      // background-color: #fff;
+      border-bottom: solid 1px #dcdcdc;
+      font-size: 0;
+      .tab_item {
+        width: 33.33%;
+        color: #444;
+        display: inline-block;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        padding: 12px 0;
+        &.active {
+          color: #23beae;
+          &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            height: 2px;
+            background-color: #23beae;
+            width: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+  }
+  .comments {
+    .comment_list {
+      li {
+        border-bottom: solid 1px #dcdcdc;
+      }
+    }
+  }
+}

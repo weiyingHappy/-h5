@@ -1,0 +1,153 @@
+@import "../scss/common";
+
+.intro-container {
+  @extend .container-common;
+  background-color: #F2F2F2;
+
+  .hotel-intro {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: solid 1px #e4e4e4;        
+  }
+  .hotel-intro-title {
+    font-size: 15px;
+    color: #555;
+    height: 49px;
+    padding: 0 14px;
+    line-height: 49px;
+  }
+  .hotel-intro-body {
+    padding: 10px 11px;
+    font-size: 15px;
+    color: #666;
+  }
+
+  .hotel_service {
+    margin-top: 10px;
+    background-color: #fff;
+    border-top: solid 1px #e4e4e4;
+    padding-bottom: 14px;
+    .title {
+      color: #555;
+      padding: 14px;
+      font-size: 15px;
+    }
+    .services {
+      padding: 0 14px;
+      font-size: 0;
+      .item {
+        display: inline-block;
+        vertical-align: top;
+        width: 16.666%;
+        font-size: 12px;
+        text-align: center;
+        .name {
+          color: #999999;
+        }
+      }
+    }
+  }
+
+  .hotel-info {
+    height: 66px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  .hotel-info-a {
+  }
+  .hotel-star-icon {
+    margin-right: 3px;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    vertical-align: top;
+    .iconfont {
+      color: #ff9f07;
+    }
+  }
+  .hotel-star-score {
+    color: #555;
+    font-size: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .hotel-name {
+    font-size: 18px;
+    width: 90%;
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+  .addr-phone {
+    @include flex(row, nowrap, space-between, center);
+
+    box-sizing: border-box;
+    min-height: 54px;
+    background-color: #fff;
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+  }
+  .hotel-addr {
+    width: 83%;
+    box-sizing: border-box;
+    @include flex(row, nowrap, start, center);
+
+    padding: 0px 11px;
+
+    color: #B3B3B3;
+    font-size: 13px;
+    .location-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/icon-ding-wei.png);
+    }
+  }
+  .hotel-phone {
+    height: 54px;
+    width: 17%;
+    border-left: 1px solid #DCDCDC;
+    box-sizing: border-box;
+
+    @include flex(row, nowrap, center, center);
+    .phone-icon {
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/icon-call.png);
+    }
+  }
+  .ha-img {
+    margin-right: 3px;
+    height: 17px;
+    width: 13px;
+  }
+  .hp-img {
+    height: 23px;
+    width: 21px;
+  }
+  .order_btn {
+    margin: 5px 0;
+    text-align: center;
+    button {
+      width: 95%;      
+      color: #fff;
+      padding: 10px 0;
+      border: none;
+      background-color: #23beae;
+      border-radius: 4px;
+      outline: none;
+      font-size: 16px;
+    }
+  }
+}
+

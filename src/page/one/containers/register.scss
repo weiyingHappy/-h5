@@ -1,0 +1,99 @@
+@import "../scss/common";
+
+.register-container {
+  @extend .container-common;
+
+  .top {
+    height: 230px;
+    width: 100%;
+
+    @include flex(row, nowrap, center, center);
+
+    .logo-img {
+      height: 84px;
+      width: 140px;
+    }
+  }
+
+  .signForm {
+    margin-top: 10%;
+    box-sizing: border-box;
+
+
+    @include flex(column, nowrap, center, inherit);
+    padding: 5px 20px 5px 20px;
+  }
+
+  .phone-container, .code-container {
+
+    padding: 5px 0 7px 0;
+    border-bottom: 1px solid #aaa;
+
+    @include flex(row, nowrap, flex-start, center);
+    margin-top: 5px;
+    height: 35px;
+  }
+  .icon-container {
+    font-size: 1.0rem;
+    coloe: #666;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  .phone-image {
+    width:23px;
+    height: 23px;
+  }
+  .code-image {
+    width: 23px;
+    height: 23px;
+  }
+  .input-phone, .input-code {
+    flex: 1;
+    height: 30px;
+    border: none;
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  .get-code {
+    width: 100px;
+    margin-left: 5px;
+    border: none;
+    background-color: #DEB269;
+    font-size: 0.8rem;
+    color: #fff;
+    height: 2.0rem;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  .submitButton {
+    margin-top: 50px;
+    border: none;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #DEB269;
+    color: #fff;
+    border-radius: 3px;
+  }
+
+  .register-dialog {
+    @include flex(column, nowrap, space-around, center);
+
+    font-size: 16px;
+    color: #666666;
+    height: 180px;
+
+    .img-dialog {
+      width: 120px;
+      height: 120px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/register-modal.png);
+    }
+  }
+
+}
+

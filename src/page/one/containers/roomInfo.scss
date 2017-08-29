@@ -1,0 +1,185 @@
+@import "../scss/common";
+
+.roomInfo-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #F2F2F2;
+
+  .top-a-img {
+    height: 200px;
+    width: 100%;
+  }
+  .top-a-des {
+
+    @include flex(row, nowrap, space-between, center);
+    background-color: #fff;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 0 11px;
+    line-height: 55px;
+  }
+  .top-a-left {
+    font-size: 1.1rem;
+    width: 55%;
+    overflow: auto;
+  }
+  .top-a-right {
+
+    @include flex(row, nowrap, felx-start, inherit)
+  }
+  .top-a-right-a {
+    text-decoration: line-through;
+    font-size: 1.1rem;
+    color: #999;
+    margin-right: 3px;
+  }
+  .top-a-right-b {
+    font-size: 1.7rem;
+    color: #FF4E00;
+  }
+  .no-room-text {
+    font-size: 16px;
+    color: #555;
+  }
+  .date-container {
+    @include flex(row, nowrap, space-around, center);
+    box-sizing: border-box;
+    padding: 0 20px;
+    background-color: #fff;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    border: solid 1px #e4e4e4;
+    &:after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 80%;
+      background: #999;
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      z-index: 1;
+    }
+    .start-date, .end-date, .num-date {
+      text-align: center;
+      .explain-text {
+        font-size: 12px;
+        color: #999;
+      }
+      .date-ins {
+        margin: 0 3px;
+        font-size: 13px;
+        color: #ff9e05;
+      }
+      .count-text {
+        color: #555;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .sign {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-width: 2px 2px 0 0;
+    border-color: #B2B2B2;
+    border-style: solid;
+    -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  }
+
+  .middle-a {
+    padding: 10px;
+
+    @include flex(column, nowrap, space-around, inherit);
+    background-color: #fff;
+  }
+  .middle-a > div {
+
+    @include flex(row, nowrap, flex-start, inherit);
+    line-height: 25px;
+  }
+  .item-label {
+    font-size: 14px;
+    color: #ABABAB;
+  }
+  .item-value {
+    color: #666666;
+    font-size: 14px;
+    margin-left: 22px;
+  }
+
+  .middle-b , .middle-c{
+    @include flex(row, nowrap, flex-start, center);
+    background-color: #fff;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+  }
+  .middle-c {
+    padding-right: 10px!important;
+  }
+  .item-label2 {
+    font-size: 14px;
+    color: #ABABAB;
+    margin-right: 20px;
+    white-space: nowrap;
+    //margin-top: 10px;
+  }
+  .room-intro {
+    font-size: 14px;
+  }
+
+  .middle-d {
+    margin-top: 10px;
+    background-color: #fff;
+  }
+  .md-a {
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #4F4F4F;
+    @include flex(row, nowrap, space-between, inherit);
+  }
+  .mda-b {
+    color: #23beae;
+  }
+  .mda-b-n {
+    color: #666666;
+  }
+  .no-comments {
+    border-top: 1px solid #DCDCDC;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .m-bottom {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-top: solid 1px #e4e4e4;
+    .order-button {
+      height: 100%;
+      width: 100%;
+      border: none;
+      background-color: #23beae;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 4px;
+      outline: none;
+    }
+    .order-button-disabled {
+      background-color: #B2B2B2!important;
+      text-decoration: line-through;
+    }
+  }
+
+}
+

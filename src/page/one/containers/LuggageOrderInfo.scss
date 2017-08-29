@@ -1,0 +1,277 @@
+.luggageorder_info {
+        font-size: 16px !important;
+    .page {
+        background-color: #F2F2F2;
+        overflow-y: auto;
+        -webkit-overflow-scrolling:touch;
+    }
+.item {
+    box-sizing: border-box;
+    padding: 10px 10px 0 10px;
+}
+.item .content {
+    border: solid 1px #DCDCDC;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 18px 12px;    
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 0px #ddd;
+}
+.title {
+    font-size: 16px;
+    width: 80%;
+    padding: 0;
+}
+.graytext {
+    font-size: 13px;
+    color: #717171;
+    margin-top: 10px;
+}
+.state {
+    position: absolute;
+    background-color: #FF0000;
+    border-top-left-radius: 10px;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+.panel {
+    background-color: #fff;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    box-sizing: border-box;
+    padding: 17px 0px;
+    margin-bottom: 8px;
+}
+.address .btitle {
+    font-size: 17px;
+    vertical-align: top;
+    margin-right: 9px;
+    color: #666666;
+    margin-left: 20px;
+    display: inline-block;
+}
+.address .title {
+    font-size: 16px;
+    vertical-align: top;
+    color: #333333;
+    display: inline-block;
+    width: 80%;
+    word-break: break-all;
+}
+.info .infostate {
+    border-bottom: solid 1px #DCDCDC;
+}
+.info .infostate .state {
+    position: static;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+}
+.info .line {
+    font-size: 13px;
+    color: #666666;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding-left: 19px;
+}
+.flow .flowuser{
+    box-sizing: border-box;
+    padding-left: 19px;
+    color: #333333;
+    font-size: 13px;
+    margin: 5px 0;
+}
+.flow .flowphone {
+    padding-bottom: 20px;
+    border-bottom: solid 1px #DCDCDC;
+    margin: 0;    
+}
+.flowline {
+}
+.flowline li {
+    box-sizing: border-box;
+    padding: 15px 0 0px 50px;
+    position: relative;
+}
+.flowline li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #DDDDDD;
+    left: 25px;
+    top: 10px;
+    z-index: 1;    
+}
+.flowline li:last-child::after {
+    display: none;
+}
+.flowline li::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: #FFA77F;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    z-index: 2;
+}
+.flowline li.active::before {
+    background-color: #FF5000;
+    border: solid 3px #FFA77F;
+    left: 15px;
+}
+.flowline li.end::before {
+    content: '\e654';
+    font-family: 'iconfont';
+    font-size: 30px;
+    color: #DDDDDD;
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 17px;
+}
+.flowline li .msg {
+    font-size: 15px;
+    color: #999999;
+}
+.flowline li .time {
+    font-size: 13px;
+    color: #999999;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #DCDCDC;
+}
+.flowline li.end.finash::before {
+    color: #FF5000;
+}
+.money {
+    color: #ff0000;
+    margin-right: 10px;
+}
+.cancelorder {
+    text-align: right;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 0;
+}
+.cancelorder span {
+    font-size: 13px;
+    color: #FF5000;
+}
+.none {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 15px;
+    color: #999999;
+}
+.cancelmodal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+}
+.modalpanel {
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.mpaneltitle {
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: solid 1px #ddd;
+}
+.mline {
+    padding-left: 10px;
+}
+span.mtitle {
+    font-size: 14px;
+    color: #ADADAD;
+}
+span.mtext {
+    font-size: 14px;
+    color: #666666;
+}
+.wmsg {
+    font-size: 12px;
+    color: #ff0000;
+    padding: 10px;
+}
+.btns {
+    padding: 10px 0;
+    text-align: center;
+}
+.btns button {
+    background-color: #fff;
+    border: solid 1px #ADADAD;
+    width: 84px;
+    height: 31px;
+    border-radius: 2px;
+    color: #666;
+    margin: 0 5px;
+    outline: none;
+}
+.btns button.primary {
+    background-color: #FF5000;
+    border: solid 1px #FF5000;
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 13px;
+    color: #999999;
+}
+/**
+标签颜色
+*/
+.red_bg {
+    background-color: #FF0000;
+}
+.green_bg {
+    background-color: #22AC38;
+}
+.blue_bg {
+    background-color: #3EB7F6;    
+}
+.orange_bg {
+    background-color: #FF5000;    
+}
+.gray_bg {
+    background-color: #CCCCCC;
+}
+
+.cancel {
+    box-sizing: border-box;
+    padding-left: 19px;
+    color: #333333;
+    font-size: 13px;
+}
+.to-pay {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    border: none;
+    background-color: #FF5000;
+    color: #fff;
+    font-size: 18px;
+}
+}

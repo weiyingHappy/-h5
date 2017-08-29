@@ -1,0 +1,32 @@
+@import "../scss/common";
+
+.coupon-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #EBEBEB;
+  padding: 10px 12px;
+
+  .top {
+    @include flex(row, nowrap, space-between, center);
+    margin-bottom: 7px;
+  }
+  .t-left {
+    font-size: 13px;
+    color: #3190E8;
+  }
+  .t-right {
+    font-size: 13px;
+    color: #999999;
+  }
+  .bottom {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 23px;
+  }
+  .b-a {
+    color: #3190E8;
+  }
+}
+

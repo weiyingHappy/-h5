@@ -1,0 +1,60 @@
+@import "../scss/common";
+
+.date-picker-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+
+  .date-container-date {
+    text-align: center;
+  }
+  .dcc {
+    @include flex(column, nowrap, flex-start, center);
+  }
+  .dcc-a {
+    width: 100%;
+    height: 50px;
+    background-color: #FF4E00;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+  }
+
+  /* hack 日期选择 */
+  .Cal__Header__dateWrapper.Cal__Header__day {
+      font-size: 20px;
+  }
+  .Cal__Day__root.Cal__Day__enabled:hover:before { /*移除hover*/
+      content: none;
+  }
+  .Cal__Header__wrapper:nth-child(1) .Cal__Header__day .Cal__Header__date:before {
+      content: '入：'
+  }
+  .Cal__Header__wrapper:nth-child(2) .Cal__Header__day .Cal__Header__date:before {
+      content: '离：'
+  }
+
+  .operationbtns {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 104px;
+      border-top: 1px solid #e8e8e8;
+      background-color: #fff;
+      box-sizing: border-box;
+  }
+
+  .operationbtns button {
+      border: none;
+      height: 40px;
+      width: 120px;
+      color: #fff;
+      background-color: #448aff;
+      border-radius: 4px;
+      box-shadow: 0 2px 7px 0px #ababab;
+  }
+}
+
+
+

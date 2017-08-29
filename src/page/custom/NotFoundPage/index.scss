@@ -1,0 +1,19 @@
+@import '../scss/common';
+
+.notfound-container {
+  @extend .container-common;
+  @include flex(row, nowrap, center, center);
+  font-size: 18px;
+  flex-direction: column;
+  .img {
+    width: 60%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    color: #666666;
+  }
+}

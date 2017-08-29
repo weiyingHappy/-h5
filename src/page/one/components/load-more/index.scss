@@ -1,0 +1,12 @@
+@import '../../scss/common';
+
+.load-more {
+  .my-load-more {
+    @include flex(row, nowrap, center, center);
+    padding: 10px 0;
+  }
+  .my-load-bottom {
+    @include flex(row, nowrap, center, center);
+  }
+
+}

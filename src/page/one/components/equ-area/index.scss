@@ -1,0 +1,61 @@
+@import '../../scss/common';
+
+.equ-area {
+  @include flex(row, wrap, flex-start, center);
+
+  background-color: #fff;
+
+  .equ-item {
+    min-width: 50px;
+    text-align: center;
+    font-size: 0;
+    .facilities {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.icon1 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-1.png);
+      }
+      &.icon2 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-2.png);
+      }
+      &.icon3 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-3.png);
+      }
+      &.icon4 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-4.png);
+      }
+      &.icon5 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-5.png);
+      }
+      &.icon6 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-6.png);
+      }
+      &.icon7 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-7.png);
+      }
+      &.icon8 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-8.png);
+      }
+      &.icon9 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-9.png);
+      }
+      &.icon10 {
+        background-image: url(http://oi9d1dmyt.bkt.clouddn.com//theme/one/style_one/facilities-icon-10.png);
+      }
+    }
+  }
+  .ei-img {
+    height: 15px;
+    width: 15px;
+  }
+  .ei-text {
+    font-size: 12px;
+    color: #666;
+  }
+}
+

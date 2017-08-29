@@ -1,0 +1,188 @@
+@import "../scss/common";
+
+.exchange-coupon-container {
+  @extend .container-common;
+  height: auto!important;
+  min-height: 100%;
+  background-color: #F4F4F4;
+  padding: 30px 20px;
+
+  .top {
+    width: 100%;
+    text-align: right;
+    font-size: 13px;
+    color: #3190E8;
+    margin-bottom: 13px;
+  }
+  .middle {
+    @include flex(column, nowrap, flex-start, center);
+    padding: 0 20px;
+  }
+  .m-a, .m-b {
+    width: 100%;
+    height: 43px;
+    box-sizing: border-box;
+  }
+  .m-a {
+    margin-bottom: 25px;
+    font-size: 16px;
+    padding-left: 12px;
+  }
+  .m-b {
+    background-color: #DDDDDD;
+    color: #fff;
+    border: none;
+    font-size: 17px;
+  }
+
+  .tanchu-container {
+    /*width: 100%;*/
+    width: 280px;
+    height: 100%;
+    @include flex(row, nowrap, center, center);
+  }
+  .tanchu {
+    height: 300px!important;
+    z-index: 2002;
+    @include flex(column, nowrap, flex-start, center);
+    width: 280px;
+    background: transparent!important;
+  }
+  .tanchu-a {
+    height: 166px;
+    width: 280px;
+    z-index: 2001;
+    margin-bottom: -40px;
+  }
+  .tanchu-c {
+    margin-top: -70px;
+    width: 260px;
+    z-index: 2002;
+    height: 78px;
+  }
+  .tanchu-b {
+    width: 280px;
+    height: 145px;
+    z-index: 2003;
+    margin-top: -15px;
+  }
+  .tanchu-d {
+    width: 130px;
+    height: 45px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #FFB400;
+    color: #FFFFFF;
+    border-radius: 3px;
+    margin-top: -70px;
+    z-index: 2200;
+    text-align: center;
+    line-height: 45px;
+  }
+
+
+
+
+
+
+
+  .coupon-item-blue, .coupon-item-red, .coupon-item-grey {
+    /*height: 95px;*/
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    border-top: 2px dotted #EBEBEB;
+    margin-bottom: 11px;
+    padding: 10px;
+    min-height: 85px;
+
+    @include flex(row, nowrap, space-between, center);
+  }
+  .coupon-item-blue {
+    border-bottom: 3px solid #5674F2;
+  }
+  .coupon-item-red {
+    border-bottom: 3px solid #FF5000;
+  }
+  .coupon-item-grey {
+    border-bottom: 3px solid #DDDDDD!important;
+  }
+  .ci-left {
+    @include flex(column, nowrap, space-around, flex-start);
+  }
+  .ci-right {
+    @include flex(column, nowrap, space-around, flex-end);
+  }
+  .cil-a {
+    font-size: 14px;
+    color: #333333;
+  }
+  .cil-b {
+    font-size: 10px;
+    color: #333333;
+  }
+  .cil-c {
+    font-size: 10px;
+    color: #999999;
+  }
+  .cir-a {
+    font-size: 16px;
+  }
+  .coupon-item-blue .cir-a {
+    color: #5674F2;
+  }
+  .coupon-item-red .cir-a {
+    color: #FF5000;
+  }
+  .coupon-item-grey .cir-a,.coupon-item-grey .cir-b,.coupon-item-grey .cir-c,.coupon-item-grey .cil-a,.coupon-item-grey .cil-b,.coupon-item-grey .cil-c {
+    color: #CCCCCC!important;
+  }
+  .cir-b {
+    font-size: 10px;
+    color: #999999;
+  }
+  .cir-c {
+    height: 21px;
+    width: 46px;
+    border-radius: 11px;
+    font-size: 10px;
+    text-align: center;
+    /*line-height: 21px;*/
+    box-sizing: border-box;
+    padding: 0;
+  }
+  .coupon-item-blue .cir-c {
+    border: 1px solid #5674F2;
+    color: #5674F2;
+  }
+  .coupon-item-red .cir-c {
+    border: 1px solid #FF5000;
+    color: #FF5000;
+  }
+  .coupon-item-grey .cir-c {
+    border: 1px solid #CCCCCC!important;
+    color: #CCCCCC!important;
+  }
+  .close {
+    position: absolute;
+    z-index: 2002;
+    right: 15%;
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    &:after {
+      content: '';
+      width: 2px;
+      height: 200px;
+      position: absolute;
+      right: 25px;
+      top: 50px;
+      background-color: #fff;
+    }
+  }
+}
+

@@ -1,0 +1,52 @@
+.wallet_log_page {
+    font-size: 16px;
+    background-color: #efefef;
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling : touch;
+    .tips {
+        text-align: center;
+        padding: 10px 0;
+        color: #777;
+    }
+    .sl-item {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #E9E9E9;
+        background-color: #fff;
+        height: 85px;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+    }
+    .sli-left {
+
+    }
+    .slil-top {
+        font-size: 16px;
+        color: #333333;
+    }
+    .slil-middle {
+        font-size: 16px;
+        color: #333333;
+    }
+    .slil-bottom {
+        font-size: 13px;
+        color: #999999;
+    }
+    .sli-right {
+        text-align: right;
+    }
+    .slir-top {
+        font-size: 14px;
+        color: #FF5001;
+    }
+    .slir-bottom {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #666666;
+    }
+}

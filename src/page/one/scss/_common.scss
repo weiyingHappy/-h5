@@ -1,0 +1,36 @@
+
+
+.container-common {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: FZLTXHK,Helvetica,Tahoma,Arial,STXihei,"华文细黑","Microsoft YaHei","微软雅黑",sans-serif;
+}
+
+#main-container, html , body{
+  @extend .container-common;
+  //font-size: 10px;
+}
+
+@mixin flex($dir, $rap, $jc, $ai) {
+  display: flex;
+  flex-flow: $dir $rap;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 720px) { body{ font-size: 20px; }.viewport{max-width: 720px;}}
+@media only screen and (max-width: 719px) and (min-width:690px) { body{ font-size: 19.4444px; }.viewport{max-width: 700px;}}
+@media only screen and (max-width: 689px) and (min-width:660px) { body{ font-size: 18.6331px; }.viewport{max-width: 689px;}}
+@media only screen and (max-width: 659px) and (min-width:630px) { body{ font-size: 17.8217px; }.viewport{max-width: 659px;}}
+@media only screen and (max-width: 629px) and (min-width:600px) { body{ font-size: 17.0103px; }.viewport{max-width: 629px;}}
+@media only screen and (max-width: 599px) and (min-width:570px) { body{ font-size: 16.1989px; }.viewport{max-width: 599px;}}
+@media only screen and (max-width: 569px) and (min-width:540px) { body{ font-size: 15.3749px; }.viewport{max-width: 569px;}}
+@media only screen and (max-width: 539px) and (min-width:510px) { body{ font-size: 14.5763px; }.viewport{max-width: 539px;}}
+@media only screen and (max-width: 509px) and (min-width:480px) { body{ font-size: 13.7650px; }.viewport{max-width: 509px;}}
+@media only screen and (max-width: 479px) and (min-width:450px) { body{ font-size: 12.9537px; }.viewport{max-width: 479px;}}
+@media only screen and (max-width: 449px) and (min-width:420px) { body{ font-size: 12.1424px; }.viewport{max-width: 449px;}}
+@media only screen and (max-width: 419px) and (min-width:390px) { body{ font-size: 11.3311px; }.viewport{max-width: 419px;}}
+@media only screen and (max-width: 389px) and (min-width:360px) { body{ font-size: 10.5189px; }.viewport{max-width: 389px;}}
+@media only screen and (max-width: 359px) and (min-width:330px) { body{ font-size: 9.7067px; }.viewport{max-width: 359px;}}
+@media only screen and (max-width: 329px) and (min-width:250px) { body{ font-size: 8.8955px; }.viewport{min-width: 320px;}}
